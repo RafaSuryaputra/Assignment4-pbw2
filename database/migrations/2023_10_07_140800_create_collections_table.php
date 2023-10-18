@@ -13,6 +13,7 @@ return new class extends Migration
      */
     public function up()
     {
+        // Rafa Suryaputra - 6706223162
         Schema::create('collections', function (Blueprint $table) {
             $table->id();
             $table->string('nameKoleksi', 100);
@@ -20,7 +21,6 @@ return new class extends Migration
             $table->integer('jumlahKoleksi');
             $table->timestamps();
         });
-        // 6706220149_Muhammad Kafaby_4604
     }
 
     /**

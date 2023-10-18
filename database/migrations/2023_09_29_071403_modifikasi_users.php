@@ -23,10 +23,10 @@ return new class extends Migration
             $table->unsignedInteger('JenisKelamin')->notNull();
 
             //modifikasi kolom
-         
+            
+            // Rafa Suryaputra - 6706223162
             $table->renameColumn('name', 'fullName');
             $table->string('email')->nullable()->change();
-            //6706220149_Muhammad Kafaby_4604
 
         });
     }

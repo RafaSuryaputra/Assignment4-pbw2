@@ -1,9 +1,7 @@
 <x-guest-layout>
     <form method="POST" action="{{ route('user.storePengguna') }}">
         @csrf
-
         <!-- 6706223162 - Rafa Suryaputra -->
-
         <!-- Name -->
         <div>
             <x-input-label for="username" :value="__('Username')" />

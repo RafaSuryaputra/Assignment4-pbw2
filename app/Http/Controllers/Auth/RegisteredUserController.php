@@ -31,7 +31,7 @@ class RegisteredUserController extends Controller
 
     public function store(Request $request): RedirectResponse
     {
-        
+        // Rafa Suryaputra - 6706223162        
         $request->validate([
             'username' => ['required', 'string', 'max:100'],
             'fullName' => ['required', 'string', 'max:100'],
@@ -42,7 +42,6 @@ class RegisteredUserController extends Controller
             'phoneNumber' => ['required', 'string', 'max:20'],
             'Agama' => ['required', 'string', 'max:20'],
             'jenisKelamin' => ['required', 'integer', 'max:4'],
-            //Muhammad Kafaby_6706220149_4604
         ]);
         // 
 
